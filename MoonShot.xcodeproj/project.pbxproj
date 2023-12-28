@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5378560E2B31615700E16896 /* CrewScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5378560D2B31615600E16896 /* CrewScrollView.swift */; };
 		53D52BCF2B2FDED7005379A4 /* MoonShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D52BCE2B2FDED7005379A4 /* MoonShotApp.swift */; };
 		53D52BD12B2FDED7005379A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D52BD02B2FDED7005379A4 /* ContentView.swift */; };
 		53D52BD32B2FDED9005379A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D52BD22B2FDED9005379A4 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5378560D2B31615600E16896 /* CrewScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewScrollView.swift; sourceTree = "<group>"; };
 		53D52BCB2B2FDED7005379A4 /* MoonShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D52BCE2B2FDED7005379A4 /* MoonShotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonShotApp.swift; sourceTree = "<group>"; };
 		53D52BD02B2FDED7005379A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				53D52BCE2B2FDED7005379A4 /* MoonShotApp.swift */,
 				53D52BD02B2FDED7005379A4 /* ContentView.swift */,
 				53D52C022B301E75005379A4 /* MissionView.swift */,
+				5378560D2B31615600E16896 /* CrewScrollView.swift */,
 				708E70782B30A24D0041EA43 /* AstronauntView.swift */,
 				53D52BDC2B2FDF2C005379A4 /* Astronaut.swift */,
 				53D52BE42B2FE30F005379A4 /* Mission.swift */,
@@ -169,6 +172,7 @@
 				53D52BE72B300B04005379A4 /* Color-Theme.swift in Sources */,
 				53D52BD12B2FDED7005379A4 /* ContentView.swift in Sources */,
 				53D52BCF2B2FDED7005379A4 /* MoonShotApp.swift in Sources */,
+				5378560E2B31615700E16896 /* CrewScrollView.swift in Sources */,
 				53D52BE52B2FE30F005379A4 /* Mission.swift in Sources */,
 				53D52BE32B2FE03D005379A4 /* Bundle-Decodable.swift in Sources */,
 			);

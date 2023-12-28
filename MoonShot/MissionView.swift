@@ -7,11 +7,16 @@
 
 import SwiftUI
 
-struct MissionView: View {
-    struct CrewMember {
-        let role: String
-        let astronaut: Astronaut
+struct DeviderView: View {
+    var body: some View {
+        Rectangle()
+            .frame(height: 2)
+            .foregroundStyle(.lightBackground)
+            .padding(.vertical)
     }
+}
+
+struct MissionView: View {
     
     let mission: Mission
     let crew: [CrewMember]
@@ -27,10 +32,7 @@ struct MissionView: View {
                         .frame(width: geometry.size.width * 0.8, height: 100)
                     Text(mission.formattedLaunchDate)
                     
-                    Rectangle()
-                        .frame(height: 2)
-                        .foregroundStyle(.lightBackground)
-                        .padding(.vertical)
+                    DeviderView()
                     
                     VStack(alignment:.leading) {
                         Text("Mission Highlights")
@@ -39,10 +41,7 @@ struct MissionView: View {
                             
                         Text(mission.description)
                         
-                        Rectangle()
-                            .frame(height: 2)
-                            .foregroundStyle(.lightBackground)
-                            .padding(.vertical)
+                        DeviderView()
                         
                         Text("Crew")
                             .font(.title.bold())
@@ -50,37 +49,9 @@ struct MissionView: View {
                     }
                     .padding(.horizontal)
                     
+                    CrewScrollView(crew: crew)
                     
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(crew, id: \.role) { crewMember in
-                                NavigationLink {
-                                    AstronautView(astronaut: crewMember.astronaut)
-                                } label: {
-                                    HStack {
-                                        Image(crewMember.astronaut.id)
-                                            .resizable()
-                                            .frame(width: 104, height: 72)
-                                            .clipShape(Capsule())
-                                            .overlay(
-                                                Capsule()
-                                                    .strokeBorder(.white, lineWidth: 1)
-                                            )
-
-                                        VStack(alignment: .leading) {
-                                            Text(crewMember.astronaut.name)
-                                                .foregroundStyle(.white)
-                                                .font(.headline)
-                                            Text(crewMember.role)
-                                                .foregroundStyle(.white.opacity(0.5))
-                                        }
-                                    }
-                                    .padding(.horizontal)
-                                }
-                            }
-                        }
-                    }
-                    .navigationTitle("Crew Member")
+                    DeviderView()
                 }
                 .padding(.bottom)
             }
